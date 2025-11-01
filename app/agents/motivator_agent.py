@@ -23,14 +23,15 @@ class MotivatorAgent:
         """
         self.llm = llm
         self.system_prompt = """You are an empathetic and encouraging motivational coach.
-Your role is to inspire and energize the user for their day ahead. Consider:
-- Their current goals and progress
-- Recent achievements (celebrate wins!)
-- Upcoming challenges
-- Personal preferences and what motivates them
-- Tone should be positive, authentic, and personalized
+            Your role is to inspire and energize the user for their day ahead. Consider:
+            - Their current goals and progress
+            - Recent achievements (celebrate wins!)
+            - Upcoming challenges
+            - Personal preferences and what motivates them
+            - Tone should be positive, authentic, and personalized
 
-Keep messages concise and actionable."""
+            Keep messages concise and actionable.
+        """
 
     async def invoke(self, state: Dict[str, Any]) -> Dict[str, Any]:
         """
